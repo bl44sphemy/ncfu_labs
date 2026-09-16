@@ -1,0 +1,25 @@
+#include <iostream>
+
+int main(){
+
+    double v0; // начальная скорость тела
+    double S; // путь, которое тело преодолело за время t
+    double t; // время, в течение которого тело двигалось
+    double a; // ускорение тела
+    double v; // скорость тела
+
+    std::cout << "Enter acceleration of object: ";
+    std::cin >> a;
+    
+    std::cout << "Enter the travel time: ";
+    std::cin >> t;
+
+    S = v0 * t + ((a * t * t) / 2);
+    v = v0 + a * t;
+
+    std::cout << "Travel length: " << S << std::endl;
+    std::cout << "Objects velocity: " << v << std::endl;
+
+
+    return 0;
+}
