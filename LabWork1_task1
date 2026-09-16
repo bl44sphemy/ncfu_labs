@@ -1,0 +1,16 @@
+#include <iostream>
+
+int main() {
+
+    double kilometers;
+    double meters;
+
+    std::cout << "Enter length in kilometers: ";
+    std::cin >> kilometers;
+
+    meters = kilometers * 1000.0;
+    
+    std::cout << kilometers << " km = " << meters << " m" << std::endl;
+
+    return 0;
+}
