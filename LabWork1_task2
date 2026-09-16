@@ -1,0 +1,21 @@
+#include <iostream>
+#include <math.h>
+
+int main(){
+
+    double a; // Первый катет
+    double b; // Второй катет
+    double c; // Гипотенуза
+
+    std::cout << "Enter legth of first cathetus: ";
+    std::cin >> a;
+
+    std::cout << "Enter lenght of second cathetus: ";
+    std::cin >> b;
+
+    c = std::sqrt(a*a+b*b);
+
+    std::cout << "Hypotenuse equals: " << c << std::endl;
+
+    return 0;
+}
